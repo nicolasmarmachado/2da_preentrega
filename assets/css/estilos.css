@@ -4,7 +4,6 @@ body{
     background: url(https://i.ibb.co/ySK80Xj/cancha-tenis-cenital2.jpg);
     background-repeat: repeat;
     background-size: auto;
-    
     margin: 0;
     padding: 0;
 }
@@ -24,7 +23,7 @@ body{
 
 #header{
     grid-area: header;
-    height: 5em;
+    height: 20vh;
 }
 
 
@@ -76,14 +75,25 @@ body{
 
 #main section h1{
     text-align: center;
-
 }
 
 /* index.html */
 
 .main__section__index--descripcion{
     height: 40vh;
-    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.main__section__index--imagen{
+    justify-content: center;
+    height: 40vh;
+}
+
+.main__section__index--imagen img{
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 
@@ -197,15 +207,22 @@ footer div div a img{
 @media only screen and (min-width:768px){
     .main__horarios{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 16px 1fr;
         grid-template-areas: 
         "titulo" "titulo"
         "categorias" "turnos"
-        ;
-      
+        ; 
     }
-    
+    .main__horarios--titulo{
+        grid-area: titulo;
+    }
+    .main__horarios--categorias{
+        grid-area: categorias;
+    }
+    .main__horarios--turnos{
+        grid-area: turnos;  
+    }
 }
 /* COMIENZA EL ESTILO DEL HEADER */
 /* 
