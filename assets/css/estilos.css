@@ -211,7 +211,7 @@ footer div div a img{
     }
     .main__horarios--categorias{
         grid-area: categorias;
-    }
+  }
     .main__horarios--turnos{
         grid-area: turnos;  
     }
